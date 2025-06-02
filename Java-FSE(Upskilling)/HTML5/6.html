@@ -1,0 +1,36 @@
+<label>Phone: <input type="text" id="phone" onblur="validatePhone()"></label><br><br>
+
+<select id="eventFee" onchange="showFee(this.value)">
+  <option value="0">Select Event</option>
+  <option value="100">Music - $100</option>
+  <option value="50">Yoga - $50</option>
+</select>
+<p id="feeDisplay"></p>
+
+<button onclick="alert('Form submitted!')">Submit</button><br><br>
+
+<img src="img1.jpg" width="100" ondblclick="enlarge(this)" />
+
+<textarea id="feedback" onkeyup="countChars(this)"></textarea>
+<p id="charCount">Characters: 0</p>
+
+<script>
+  function validatePhone() {
+    let phone = document.getElementById('phone').value;
+    if (!/^\d{10}$/.test(phone)) {
+      alert("Enter valid 10-digit phone number");
+    }
+  }
+
+  function showFee(value) {
+    document.getElementById('feeDisplay').textContent = "Event Fee: $" + value;
+  }
+
+  function enlarge(img) {
+    img.style.width = "200px";
+  }
+
+  function countChars(el) {
+    document.getElementById('charCount').textContent = "Characters: " + el.value.length;
+  }
+</script>

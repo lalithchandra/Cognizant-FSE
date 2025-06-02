@@ -1,0 +1,17 @@
+/* Background with fallback */
+body {
+  background: #e6f2ff url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* RGBA text and section header gradient */
+.eventCard {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+}
+
+.section-header {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+  padding: 10px;
+}

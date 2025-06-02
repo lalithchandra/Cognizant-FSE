@@ -1,0 +1,26 @@
+/* Base layout */
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  .eventCard img {
+    width: 80vw;
+  }
+}

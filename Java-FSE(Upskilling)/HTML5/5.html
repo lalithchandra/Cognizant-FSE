@@ -1,0 +1,29 @@
+<style>
+  form {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid gray;
+    width: 300px;
+  }
+</style>
+
+<form onsubmit="confirmRegistration(event)">
+  <input type="text" name="name" placeholder="Enter your name" required autofocus><br><br>
+  <input type="email" name="email" placeholder="Enter your email" required><br><br>
+  <input type="date" name="date" required><br><br>
+  <select name="eventType" required>
+    <option value="">Select Event Type</option>
+    <option value="music">Music</option>
+    <option value="sports">Sports</option>
+  </select><br><br>
+  <textarea placeholder="Any message?" required></textarea><br><br>
+  <button type="submit">Register</button>
+  <output id="confirmation"></output>
+</form>
+
+<script>
+  function confirmRegistration(event) {
+    event.preventDefault();
+    document.getElementById('confirmation').textContent = "Registration Successful!";
+  }
+</script>

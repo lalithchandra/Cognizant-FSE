@@ -1,0 +1,11 @@
+Instructions for Debugging with Chrome DevTools
+
+1. Open Chrome → Right-click → Inspect
+
+2. Use Elements Tab to change live CSS
+
+3. Open Console Tab to see logs or script errors (console.log() in your script)
+
+4. Use Sources Tab to set JS breakpoints → refresh page → step through execution
+
+5. VS Code → Right-click → "Go to Definition", "Peek Definition", and "Debugger for Chrome" extension can also help debug

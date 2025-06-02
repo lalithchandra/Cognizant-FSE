@@ -1,0 +1,7 @@
+Steps for Debug and Test with Dev Tools and VS Code:
+
+1. Open Chrome DevTools → Click "Toggle Device Toolbar" (Ctrl+Shift+M) to simulate devices.
+
+2. Inspect elements and modify styles live in the "Elements" panel.
+
+3. Check "Network" tab to confirm if styles.css is loaded successfully (Status: 200).
